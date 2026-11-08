@@ -175,7 +175,7 @@ function App() {
         <p className="section-label">LET'S CONNECT</p>
         <h2>Get In <span>Touch</span></h2>
         <p>Have an opportunity or project in mind? Let's talk!</p>
-        <a href="mailto:YOUR_EMAIL@example.com" className="btn">
+        <a href="mailto:shyamsai6716@gmail.com" className="btn">
           	✉ Send Me an Email
         </a>
       </section>

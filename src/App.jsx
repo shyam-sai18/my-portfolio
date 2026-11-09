@@ -171,14 +171,69 @@ function App() {
   </div>
 </section>
 
-      <section className="section contact" id="contact">
-        <p className="section-label">LET'S CONNECT</p>
-        <h2>Get In <span>Touch</span></h2>
-        <p>Have an opportunity or project in mind? Let's talk!</p>
-        <a href="mailto:shyamsai6716@gmail.com" className="btn">
-          	✉ Send Me an Email
-        </a>
-      </section>
+     
+<section className="section contact" id="contact">
+  <p className="section-label">LET'S CONNECT</p>
+  <h2>Get In <span>Touch</span></h2>
+  <p>Have an opportunity or project in mind? Let's talk!</p>
+
+  <form
+    className="contact-form"
+    action="https://formsubmit.co/shyamsai6716@gmail.com"
+    method="POST"
+  >
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Portfolio Contact Message!"
+    />
+
+    <input
+      type="hidden"
+      name="_captcha"
+      value="true"
+    />
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    />
+
+    <input
+      type="text"
+      name="subject"
+      placeholder="Subject"
+      required
+    />
+
+    <textarea
+      name="message"
+      placeholder="Write your message..."
+      rows="5"
+      required
+    ></textarea>
+
+    <button type="submit" className="btn">
+      Send Message ✉
+    </button>
+  </form>
+
+  <p>Or email me directly: 
+    <a href="mailto:shyamsai6716@gmail.com">
+      shyamsai6716@gmail.com
+    </a>
+  </p>
+</section>
+
 
       <footer>
         <p>© 2026 Shyam Sai. Built with React.</p>
